@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDEE06CACBB8308008A31762 /* libPods-custom-transitions-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 194289D9AE4EA2A6E8A81848 /* libPods-custom-transitions-ios.a */; };
 		D761743C241B92AC00CC3F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D761743B241B92AC00CC3F1C /* AppDelegate.swift */; };
 		D7617440241B92AC00CC3F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D761743F241B92AC00CC3F1C /* ViewController.swift */; };
 		D7617445241B92B300CC3F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7617444241B92B300CC3F1C /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		194289D9AE4EA2A6E8A81848 /* libPods-custom-transitions-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-custom-transitions-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA91215BDA6D0C25AD30FB0 /* Pods-custom-transitions-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-custom-transitions-ios.debug.xcconfig"; path = "Target Support Files/Pods-custom-transitions-ios/Pods-custom-transitions-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D7617438241B92AC00CC3F1C /* custom-transitions-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-transitions-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D761743B241B92AC00CC3F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D761743F241B92AC00CC3F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D7617447241B92B300CC3F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7617449241B92B300CC3F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D761744F241B955700CC3F1C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DC8AF0547A232D15F4FDAE84 /* Pods-custom-transitions-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-custom-transitions-ios.release.xcconfig"; path = "Target Support Files/Pods-custom-transitions-ios/Pods-custom-transitions-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEE06CACBB8308008A31762 /* libPods-custom-transitions-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C2E07D5ABCA923BC33CBDC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				194289D9AE4EA2A6E8A81848 /* libPods-custom-transitions-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		815D722022A9299DC3617C65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEA91215BDA6D0C25AD30FB0 /* Pods-custom-transitions-ios.debug.xcconfig */,
+				DC8AF0547A232D15F4FDAE84 /* Pods-custom-transitions-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D761742F241B92AC00CC3F1C = {
 			isa = PBXGroup;
 			children = (
 				D761743A241B92AC00CC3F1C /* custom-transitions-ios */,
 				D7617439241B92AC00CC3F1C /* Products */,
+				815D722022A9299DC3617C65 /* Pods */,
+				7C2E07D5ABCA923BC33CBDC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +128,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D761744C241B92B300CC3F1C /* Build configuration list for PBXNativeTarget "custom-transitions-ios" */;
 			buildPhases = (
+				0982AEA1A49E6B6F53509146 /* [CP] Check Pods Manifest.lock */,
 				D7617434241B92AC00CC3F1C /* Sources */,
 				D7617435241B92AC00CC3F1C /* Frameworks */,
 				D7617436241B92AC00CC3F1C /* Resources */,
@@ -160,6 +186,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0982AEA1A49E6B6F53509146 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-custom-transitions-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7617434241B92AC00CC3F1C /* Sources */ = {
@@ -302,6 +353,7 @@
 		};
 		D761744D241B92B300CC3F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA91215BDA6D0C25AD30FB0 /* Pods-custom-transitions-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +373,7 @@
 		};
 		D761744E241B92B300CC3F1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8AF0547A232D15F4FDAE84 /* Pods-custom-transitions-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
